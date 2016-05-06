@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<div class="home">
+
+
+  <p>Create a web application using JavaScript, TypeScript, Node.js, MongoDB, Cordova.</p>
+
+  <p><b>Note:</b> This tutorial has been tested on Mac and Linux, though it should also work on Windows. We will be using <a href="https://code.visualstudio.com/">Visual Studio Code</a> due to its excellent TypeScript support.</p>
+
+
+  <ol>
+    {% for my_page in site.pages %}
+      {% if my_page.title %}
+      <li>
+          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ol>
+
+
+  <!-- <h1 class="page-heading">Posts</h1>
+
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+
+</div>
