@@ -6,14 +6,16 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Full-stack dev tutorial
+title: Data Structures Bootcamp
 email: abiblarz@csumb.edu
 description: > # this means to ignore newlines until "baseurl:"
- 
+
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://avner-csumb.github.io/" # the base hostname & protocol for your site
 twitter_username: Avner_CSUMB
-github_username:  avner_csumb
+github_username:  avner-csumb
+gems:
+  - jemoji
 
 # Build settings
 markdown: kramdown
